@@ -44,7 +44,7 @@ esac
 
 case "${LB_INITRAMFS}" in
 	live-boot|dracut-live)
-		INITFS="live"
+		INITFS="${LB_LIVE_DIR:-live}"
 		;;
 
 	*)

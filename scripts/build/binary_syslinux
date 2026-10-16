@@ -38,7 +38,7 @@ Acquire_lockfile
 
 case "${LB_INITRAMFS}" in
 	live-boot|dracut-live)
-		_INITRAMFS="live"
+		_INITRAMFS="${LB_LIVE_DIR:-live}"
 		;;
 	*)
 		_INITRAMFS="boot"

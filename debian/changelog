@@ -1,3 +1,11 @@
+live-build (1:20250505+deb13u1+lingmo1) unstable; urgency=medium
+
+  * Lingmo 定制：介质内目录名改为可配置 INITFS/DESTDIR/_INITRAMFS=
+    "${LB_LIVE_DIR:-live}"（共 9 处），供 ISO 使用 core/ 之类目录名；
+    构建时 export LB_LIVE_DIR=core 即可。
+
+ -- Lingmo OS Team <team@lingmo.org>  Fri, 16 Oct 2026 18:13:16 +0800
+
 live-build (1:20250505+deb13u1) trixie; urgency=medium
 
   * Remove os-release diversions once rootfs creation is finished
